@@ -1,0 +1,402 @@
+body {
+	/* TODO: add background colour #f6f6f6 and background image images/bg.png (2 properties) */
+    /* answer */
+	background-color: #f6f6f6;
+	background-image: url('/images/bg.png');
+    /* answer */
+	background-repeat: repeat;
+	font-size: 18px;
+	color: #000;
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+a {
+	color: #6b9658;
+    text-decoration: none;
+    -webkit-transition: .07s ease-in;
+    transition: .07s ease-in;
+}
+/* TODO: when you hover on a link, make the font colour #557846 and give a 2px solid #557846 bottom border (selector + 2 properties) */
+/* answer */
+a:hover {
+	color: #557846;
+	border-bottom: 2px solid #557846;
+}
+/* answer */
+img {
+	height: auto;
+    /* TODO: set maximum width to 100% so images will resize on all viewports (1 property) */
+    /* answer */
+	max-width: 100%;
+    /* answer */
+    vertical-align: middle;
+}
+
+p {
+    margin-bottom: 24px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 12px;
+    color: #000;
+    font-weight: 500;
+}
+h1 {
+    font-size: 27px;
+}
+h2 {
+    font-size: 25px;
+	line-height: 40px;
+}
+h3 {
+    font-size: 22px;
+	line-height: 36px;
+}
+blockquote {
+	/* TODO: make italic (1 property) */
+    /* answer */
+	font-style: italic;
+    /* answer */
+	/* TODO: use shortform for margin right 50px, margin bottom 24px, margin left 50px (1 property) */
+    /* answer */
+	margin: 0 50px 24px 50px;
+    /* answer */
+    line-height: 24px;
+}
+
+ol {
+	/* TODO: make it decimal ordered list (1 property) */
+    /* answer */
+	list-style-type: decimal;
+    /* answer */
+    margin: 0 0 24px 24px;
+}
+
+
+
+.post-image {
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+
+
+/* main nav */
+#headertop {
+	background: #fff;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+#headertop nav {
+	/* TODO: use property "margin" to center, center the text (2 properties) */
+    /* answer */
+	margin: 5 auto; 
+	text-align: center;
+    gap: 20px;
+    
+    /* answer */
+    padding: 20px 0 0 0;
+}
+
+#headertop nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 24px 0;
+}
+#headertop nav li {
+	display: inline-block;
+}
+
+/* additional properties because without this, the text on the navbar doesn't have any gaps between each other*/
+#headertop nav ul li {
+    margin-right: 50px;
+}
+/* additional properties */
+
+/* TODO: target only the navigational links in #headertop (1 selector) */
+/* {
+	color: #000;
+    display: inline-block;
+    line-height: 23px;
+    padding: 10px 25px;
+    text-decoration: none;
+    white-space: nowrap;
+    letter-spacing: .1em;
+    -webkit-transition: .07s ease-in;
+    transition: .07s ease-in;
+} */
+
+#headertop nav a:hover {
+	background: #e0e0e0;
+	/* TODO: remove bottom border when hovering on links (1 property) */
+    /* answer */
+	border-bottom: none;
+    /* answer */
+    /* additional properties */
+    padding: 8px 20px; 
+    border-radius: 5px; 
+    /* additional properties */
+}
+
+
+
+/* logo and title */
+.headerimage {
+	display: block;
+    margin: 20px auto 0 auto;
+}
+.site-branding {
+    text-align: center;
+	padding: 24px 20px;
+}
+
+.site-title {
+    font-size: 35px;
+}
+
+.site-description {
+    color: #4f4f4f;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .1em;
+}
+
+
+
+/* content */
+.site {
+	margin: 0 auto;
+	/* TODO: set maximum width to 1470px (1 property) */
+    /* answer */
+	max-width: 1470px;
+    /* answer */
+}
+.main {
+    background: #ffffff;
+	border: 1px solid #e0e0e0;
+	padding: 40px;
+}
+.heading .main {
+	/* TODO: remove border, top padding and bottom padding (3 properties) */
+    /* answer */
+	border: none;
+	padding-top: 0;
+	padding-bottom: 0;
+    /* answer */
+}
+
+
+.page-title {
+	/* TODO: make upper case, font weight 600, line height 36px, letter spacing 2px (4 properties) */
+    /* answer */
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 36px;
+	letter-spacing: 2px;
+    /* answer */
+
+	background-color: #f6f6f6;
+	border: 2px dashed #fff;
+	/* TODO: overwrite right, bottom, left borders to be 8px double white (3 properties) */
+    /* answer */
+	border-right: 8px double white;
+	border-bottom: 8px double white;
+	border-left: 8px double white;
+    /* answer */
+
+	display: inline-block;
+	margin: 0;
+	padding: 5px 20px;
+	font-size: 22px;
+}
+
+.content .main {
+	border-top: none;
+}
+
+
+
+.site-main {
+	/* TODO: set display to flex and justify so all extra space is between the content (2 properties) */
+    /* answer */
+	display: flex;
+	justify-content: space-between;
+    /* answer */
+}
+
+.content-area {
+	width: 66%;
+}
+
+
+
+/* sidebar */
+.secondary {
+	width: 30%;
+}
+
+.widget {
+    line-height: 26px;
+    font-size: 16px;
+    margin: 0 0 20px;
+    padding: 30px;
+    /* TODO: set all borders to solid 1px #e0e0e0 (1 property) */
+    /* answer */
+    border: 1px solid #e0e0e0;
+    /* answer */
+
+    /* TODO: overwrite top border to be dashed (1 property) */
+    /* answer */
+    border-top-style: dashed;
+    /* answer */
+
+    background: #fff;
+}
+
+.widget h2 {
+	color: #000;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+.widget p {
+    margin-bottom: 20px;
+}
+.widget p:last-child {
+    margin-bottom: 0;
+}
+.widget img {
+	display: block;
+	/* TODO: use property "margin" to center (1 property) */
+    /* answer */
+	margin: 0 auto;
+    /* answer */
+	border: 8px double #fff;
+	padding: 20px;
+	background-color: #f6f6f6;
+	/* TODO: add background image images/bg.png (1 property) */
+    /* answer */
+	background-image: url('/images/bg.png');
+    /* answer */
+	background-repeat: repeat;
+	max-width: 60%;
+}
+.widget li {
+    padding: 8px 0 9px;
+}
+.widget li:last-child {
+    padding-bottom: 0;
+}
+.widget .post-date {
+    color: #4f4f4f;
+    display: block;
+    font-size: 11px;
+    letter-spacing: .1em;
+}
+
+
+
+/* footer */
+footer {
+	margin-top: 20px;
+	background-color: #ffffff;
+	/* TODO: use shortform to give padding top 20px, padding right 10px, padding bottom 20px, padding left 10px (1 property) */
+    /* answer */
+	padding: 20px 10px;
+    /* answer */
+}
+
+.site-info {
+	/* TODO: set font colour to black (1 property) */
+    /* answer */
+	color: black;
+    /* answer */
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.menusocial {
+	text-align: right;
+}
+.menusocial li {
+    list-style: none;
+    display: inline-block;
+}
+.menusocial a {
+	border-bottom: none;
+}
+span.text {
+	/* TODO: do not show (1 property) */
+    /* answer */
+	display: none;
+    /* answer */
+}
+
+
+
+/* additional style, I wanted to make a mobile responsive settings for this site */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #headertop nav {
+        margin: 10px auto;
+        padding: 10px 0;
+    }
+
+    #headertop nav ul li {
+        margin-right: 10px;
+    }
+
+    .site {
+        padding: 0 10px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .secondary {
+        width: 100%;
+    }
+
+    .widget {
+        margin-bottom: 15px;
+    }
+
+    .widget img {
+        max-width: 100%;
+    }
+
+    .site-info {
+        text-align: center;
+    }
+
+    .site-main {
+        flex-direction: column;
+    }
+
+    .content-area {
+        width: 100%;
+    }
+
+    .secondary {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .menusocial {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
